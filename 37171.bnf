@@ -1,5 +1,5 @@
 <classSpecifier>::=struct Identifier { } <initDeclarator> ;|class Identifier { } <initDeclarator> ;
-<initDeclarator>::=Identifier = <initializerClause> <initializerClause>|Identifier = <initializerClause>
-<initializerClause>::={ }|( <theTypeId> )
+<initDeclarator>::=Identifier = <initializerClause>
+<initializerClause>::=<initializerClause> <initializerClause>|{ }|( <theTypeId> )
 <theTypeId>::=const <parametersAndQualifiers>
 <parametersAndQualifiers>::=Identifier|Identifier &|Identifier &&
